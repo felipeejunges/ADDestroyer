@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,12 +20,21 @@ public class Shooting : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject aux;
-            aux = Instantiate(bulletRef, 
-                spawnPointRef.position, 
-                spawnPointRef.rotation);
-            aux.GetComponent<Rigidbody>().AddForce(spawnPointRef.right * (shootForce * ( - 1)),
-                ForceMode.Impulse);
+            ShootingOnPress();
         }
+        if(Input.GetMouseButtonDown(0))
+        {
+            ShootingOnPress();
+        }
+    }
+
+    private void ShootingOnPress()
+    {
+        GameObject aux;
+        aux = Instantiate(bulletRef,
+            spawnPointRef.position,
+            spawnPointRef.rotation);
+        aux.GetComponent<Rigidbody>().AddForce(spawnPointRef.right * (shootForce * (-1)),
+            ForceMode.Impulse);
     }
 }
