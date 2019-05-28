@@ -8,7 +8,7 @@ public class MeteorShooting : MonoBehaviour
     public Transform spawnPointRef;
     public static float shootForce = 1;
     public int minRandom = 0;
-    public static int maxRandom = 300;
+    public static int maxRandom = 200;
     public int tick = 0;
     public int sorted = 0;
     // Start is called before the first frame update

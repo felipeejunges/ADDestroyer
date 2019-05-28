@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MeteorScript : MonoBehaviour
 {
-  
+
+    public int shootingAutoDestroy = 10;
+    // Start is called before the first frame update
+    void Start()
+    {
+        Destroy(this.gameObject, shootingAutoDestroy);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -17,7 +24,7 @@ public class MeteorScript : MonoBehaviour
     {
         if (col.gameObject.tag == "Lose")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
