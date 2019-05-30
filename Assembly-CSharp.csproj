@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\GameEngine\MeteorStrategy.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Ship\BulletScript.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Ship\Shooting.cs" />
+    <Compile Include="Assets\Scripts\GameEngine\Ship\SpaceShipMenuMovement.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Ship\SpaceShipMovement.cs" />
     <Compile Include="Assets\Scripts\UI\Menus\MenuScript.cs" />
     <Compile Include="Assets\Scripts\UI\Texts\BulletTextScript.cs" />

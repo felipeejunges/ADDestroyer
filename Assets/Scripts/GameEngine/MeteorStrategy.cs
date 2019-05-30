@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MeteorStrategy
 {
-    private static MeteorModel green = new MeteorModel("green", 1, 0, 1f, new Color(0, 255, 101));
-    private static MeteorModel blue = new MeteorModel("blue", 3, 1, 1.2f, new Color(0, 101, 255));
-    private static MeteorModel yellow = new MeteorModel("yellow", 5, 2, 1.4f, new Color(255, 255, 0));
-    private static MeteorModel red = new MeteorModel("red", 7, 3, 1.6f, new Color(255, 0, 10));
-    private static MeteorModel white = new MeteorModel("white", 10, 4, 1.8f, new Color(200, 200, 200));
+    private static MeteorModel green = new MeteorModel("green", 1, 0, 1f, new Color(0.1f, 0.8f, 0.3f));
+    private static MeteorModel blue = new MeteorModel("blue", 2, 1, 1.15f, new Color(0.1f, 0.5f, 0.8f));
+    private static MeteorModel yellow = new MeteorModel("yellow", 3, 2, 1.3f, new Color(1, 0.8f, 0));
+    private static MeteorModel red = new MeteorModel("red", 4, 3, 1.4f, new Color(1, 0, 0.03f));
+    private static MeteorModel white = new MeteorModel("white", 5, 4, 1.5f, new Color(200, 200, 200));
 
     public static MeteorModel getMeteorByColor(string color)
     {

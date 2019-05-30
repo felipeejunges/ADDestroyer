@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class MeteorScript : MonoBehaviour
 {
     public int shootingAutoDestroy = 10;
+    public MeteorModel meteor = MeteorStrategy.getMeteorByColor("blue");
+    
     // Start is called before the first frame update
     void Start()
     {

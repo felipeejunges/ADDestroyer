@@ -29,7 +29,8 @@ public class BulletScript : MonoBehaviour
     {
         if(col.gameObject.tag == "Alvo")
         {
-            ScoreScript.scoreValue++;
+            ScoreScript.meteoreDestroyer++;
+            ScoreScript.scoreValue += (1 * col.gameObject.GetComponent<MeteorScript>().meteor.point);
             LevelingScript.makeItHarder();
             Destroy(col.gameObject);
             Destroy(this.gameObject);

@@ -31,6 +31,7 @@ public class MeteorShooting : MonoBehaviour
             aux.GetComponent<Renderer>().material.color = sortedMeteor.color;
             aux.GetComponent<Rigidbody>().AddForce(spawnPointRef.right * (sortedMeteor.speedMultipler * shootForce),
                 ForceMode.Impulse);
+            aux.GetComponent<MeteorScript>().meteor = sortedMeteor;
             tick = 0;
             sorted = Random.Range(minRandom, maxRandom);
         }
