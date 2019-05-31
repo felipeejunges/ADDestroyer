@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d891d12ffa2537429709cadaf2b7063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 25
 --- !u!54 &292228637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -345,8 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e507d958ffe0645a300677f67cc31f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletRef: {fileID: 3908319730066966653, guid: 3381b029da81c20479328100c2236679,
-    type: 3}
+  bulletRef: {fileID: 112054, guid: 66384f19d8d3cc042a4841bb312b05e4, type: 3}
   spawnPointRef: {fileID: 2060846351}
   minRandom: 0
   tick: 0
@@ -1075,7 +1074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d5f02142fd614bc429559c3d9c05482c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d5f02142fd614bc429559c3d9c05482c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1219,6 +1218,18 @@ PrefabInstance:
     - target: {fileID: 4280216145872578, guid: 1885272d02befb3429e46bfb5a828167, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280216145872578, guid: 1885272d02befb3429e46bfb5a828167, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280216145872578, guid: 1885272d02befb3429e46bfb5a828167, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280216145872578, guid: 1885272d02befb3429e46bfb5a828167, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1885272d02befb3429e46bfb5a828167, type: 3}
