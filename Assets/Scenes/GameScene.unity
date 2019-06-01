@@ -148,6 +148,7 @@ MonoBehaviour:
   minRandom: 0
   tick: 0
   sorted: 0
+  bulletsRef: []
 --- !u!114 &34532261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +351,12 @@ MonoBehaviour:
   minRandom: 0
   tick: 0
   sorted: 0
+  bulletsRef:
+  - {fileID: 159232, guid: be0c5bb5e87aa724389ad73a7f8e9788, type: 3}
+  - {fileID: 112054, guid: 66384f19d8d3cc042a4841bb312b05e4, type: 3}
+  - {fileID: 108406, guid: 00684c1d8314c3a4f8d58f4988233356, type: 3}
+  - {fileID: 155636, guid: 51db1e0f8a2ffb841a9e47380df0fc62, type: 3}
+  - {fileID: 193304, guid: 197689c139fb671489c4faec41b5fb80, type: 3}
 --- !u!1 &451850274
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152928629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: -0.012, z: 0}
+  m_LocalPosition: {x: 2.1, y: -0.012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 66906928}

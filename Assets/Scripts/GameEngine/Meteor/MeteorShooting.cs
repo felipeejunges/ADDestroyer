@@ -12,6 +12,7 @@ public class MeteorShooting : MonoBehaviour
     public int tick = 0;
     public int sorted = 0;
     public static MeteorModel sortedMeteor = null;
+    public List<GameObject> bulletsRef;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class MeteorShooting : MonoBehaviour
         if (tick >= sorted)
         {
             GameObject aux;
+            bulletRef = getGameObjectFromList(bulletsRef);
             sortedMeteor = MeteorStrategy.getMeteorBySorted(Random.Range(0, 10));
             aux = Instantiate(bulletRef,
                 spawnPointRef.position,
@@ -35,5 +37,11 @@ public class MeteorShooting : MonoBehaviour
             tick = 0;
             sorted = Random.Range(minRandom, maxRandom);
         }
+    }
+
+    private GameObject getGameObjectFromList(List<GameObject> list)
+    {
+        int sorted = Random.Range(0, list.Count - 1);
+        return list[sorted];
     }
 }
