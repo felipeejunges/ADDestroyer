@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BulletScript : MonoBehaviour
 {
     public float shootingAutoDestroy = 0.1f;
+    public ParticleSystem explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +34,17 @@ public class BulletScript : MonoBehaviour
             ScoreScript.meteoreDestroyer++;
             ScoreScript.scoreValue += (1 * col.gameObject.GetComponent<MeteorScript>().meteor.point);
             LevelingScript.makeItHarder();
+            Explode(col.gameObject.transform.position);
             Destroy(col.gameObject);
             Destroy(this.gameObject);
+        }
+    }
+
+    void Explode(Vector3 position)
+    {
+        if (explosion != null && SceneManager.GetActiveScene().name.Equals("GameScene"))
+        {
+            Instantiate(explosion, position, Quaternion.identity);
         }
     }
 }

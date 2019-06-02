@@ -7,19 +7,13 @@ public class MeteorScript : MonoBehaviour
 {
     public int shootingAutoDestroy = 10;
     public MeteorModel meteor = MeteorStrategy.getMeteorByColor("blue");
+    public ParticleSystem explosion;
     
     // Start is called before the first frame update
     void Start()
     {
         Destroy(this.gameObject, shootingAutoDestroy);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
 
     private void OnCollisionEnter(Collision col)
     {
@@ -28,4 +22,5 @@ public class MeteorScript : MonoBehaviour
             SceneManager.LoadScene("EndScene");
         }
     }
+ 
 }
