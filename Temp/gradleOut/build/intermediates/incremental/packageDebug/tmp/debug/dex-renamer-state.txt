@@ -1,0 +1,4 @@
+#Mon Jun 03 23:01:21 BRT 2019
+base.0=C\:\\Users\\Junges\\Documents\\git\\ADDestroyer\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

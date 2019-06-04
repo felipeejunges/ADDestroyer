@@ -25,10 +25,11 @@ public class LevelingScript : MonoBehaviour
     public static void makeItHarder()
     {
         if (ScoreScript.meteoreDestroyer % 2 == 0) MeteorMovement.speed += 10f;
-        else MeteorShooting.shootForce += 0.1f;
+        else MeteorShooting.shootForce += 0.05f;
 
         if (ScoreScript.meteoreDestroyer % 5 == 0)
         {
+            //MeteorShooting.shootForce += 0.1f;
             if (MeteorShooting.maxRandom >= 5) MeteorShooting.maxRandom -= 5;
         }
         if (ScoreScript.meteoreDestroyer % 10 == 0)

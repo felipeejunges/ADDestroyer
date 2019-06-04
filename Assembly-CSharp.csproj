@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\GameEngine\Ship\SpaceShipMovement.cs" />
     <Compile Include="Assets\Scripts\UI\Menus\MenuScript.cs" />
     <Compile Include="Assets\Scripts\UI\Texts\BulletTextScript.cs" />
+    <Compile Include="Assets\Scripts\UI\Texts\DataLevelingScript.cs" />
     <Compile Include="Assets\Scripts\UI\Texts\ScoreScript.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
