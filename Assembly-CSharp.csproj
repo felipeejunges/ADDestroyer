@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameEngine\AutoDestroy.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Earth\EarthSpinScript.cs" />
     <Compile Include="Assets\Scripts\GameEngine\LevelingScript.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Meteor\MeteorMovement.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\Scripts\GameEngine\Meteor\MeteorShooting.cs" />
     <Compile Include="Assets\Scripts\GameEngine\MeteorModel.cs" />
     <Compile Include="Assets\Scripts\GameEngine\MeteorStrategy.cs" />
+    <Compile Include="Assets\Scripts\GameEngine\PowerUps\AutoShootingScript.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Ship\BulletScript.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Ship\Shooting.cs" />
     <Compile Include="Assets\Scripts\GameEngine\Ship\SpaceShipMenuMovement.cs" />

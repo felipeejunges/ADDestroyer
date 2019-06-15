@@ -26,7 +26,7 @@ public class MeteorShooting : MonoBehaviour
         {
             GameObject aux;
             bulletRef = getGameObjectFromList(bulletsRef);
-            sortedMeteor = MeteorStrategy.getMeteorBySorted(Random.Range(0, 10));
+            sortedMeteor = MeteorStrategy.getMeteorBySorted(Random.Range(0, 11));
             aux = Instantiate(bulletRef,
                 spawnPointRef.position,
                 spawnPointRef.rotation);

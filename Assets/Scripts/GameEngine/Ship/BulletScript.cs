@@ -7,6 +7,7 @@ public class BulletScript : MonoBehaviour
 {
     public float shootingAutoDestroy = 0.1f;
     public ParticleSystem explosion;
+    public bool isPowerUp = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnDestroy()
     {
-        if(Shooting.bulletCount >= 1)
+        if(isPowerUp == false && Shooting.bulletCount >= 1)
         {
             Shooting.bulletCount--;
         }

@@ -27,10 +27,11 @@ public class LevelingScript : MonoBehaviour
         if (ScoreScript.meteoreDestroyer % 2 == 0) MeteorMovement.speed += 10f;
         else MeteorShooting.shootForce += 0.05f;
 
+        if (MeteorShooting.maxRandom >= 10) MeteorShooting.maxRandom -= 1;
         if (ScoreScript.meteoreDestroyer % 5 == 0)
         {
             //MeteorShooting.shootForce += 0.1f;
-            if (MeteorShooting.maxRandom >= 5) MeteorShooting.maxRandom -= 5;
+            
         }
         if (ScoreScript.meteoreDestroyer % 10 == 0)
         {
