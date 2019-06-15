@@ -8,9 +8,12 @@ public class BulletScript : MonoBehaviour
     public float shootingAutoDestroy = 0.1f;
     public ParticleSystem explosion;
     public bool isPowerUp = false;
+    public AudioClip explosionAudio;
+    public AudioClip shootingAudio;
     // Start is called before the first frame update
     void Start()
     {
+        AudioSource.PlayClipAtPoint(shootingAudio, this.gameObject.transform.position);
         Destroy(this.gameObject, shootingAutoDestroy);
     }
 
@@ -37,6 +40,7 @@ public class BulletScript : MonoBehaviour
             LevelingScript.makeItHarder();
             Explode(col.gameObject.transform.position);
             Destroy(col.gameObject);
+            AudioSource.PlayClipAtPoint(explosionAudio, this.gameObject.transform.position);
             Destroy(this.gameObject);
         }
     }
