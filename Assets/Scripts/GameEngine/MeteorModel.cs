@@ -19,5 +19,27 @@ public class MeteorModel
         this.color = color;
     }
 
+    public string getPlacement()
+    {
+        if (adType == 1) {
+            return "";
+        }
+        else if (adType == 2)
+        {
+            return "1Second";
+        }
+        else if (adType == 3)
+        {
+            return "5Seconds";
+        }
+        else if (adType == 4)
+        {
+            return "15Seconds";
+        }
+        else
+        {
+            return "Eternal";
+        }
+    }
 
 }
